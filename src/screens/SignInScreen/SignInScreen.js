@@ -10,35 +10,31 @@ import {
 import Logo from '../../../assets/images/Logo_1.png';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
+import SocialSignInButtons from '../../components/SocialSignInButtons';
+import { useNavigation } from '@react-navigation/native';
 
 const SignInScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const {height} = useWindowDimensions();
+  const navigation = useNavigation();
 
   const onSignInPressed = () => {
-    console.warn('Sign in');
-  };
-  const onForgotPasswordPressed = () => {
-    console.warn('OnForgotPasswordPressed ');
+    // Validate user 
+    navigation.navigate('Home');
   };
 
-  const onSignInFacebook = () => {
-    console.warn('facebook');
+  const onForgotPasswordPressed = () => {
+    navigation.navigate('ForgotPassword');
   };
-  const onSignInGoogle = () => {
-    console.warn('google');
-  };
-  const onSignInApple = () => {
-    console.warn('apple');
-  };
+
   const onSignUpPressed = () => {
-    console.warn('onSignUpPressed ');
+    navigation.navigate('SignUp')
   };
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false} >
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
         <Image
           source={Logo}
@@ -64,24 +60,8 @@ const SignInScreen = () => {
           type="TERTIARY"
         />
 
-        <CustomButton
-          text="Sign in with Facebook"
-          onPress={onSignInFacebook}
-          bgColor="#E7EAF4"
-          fgColor="#4765A9"
-        />
-        <CustomButton
-          text="Sign in with Google"
-          onPress={onSignInGoogle}
-          bgColor="#FAE9EA"
-          fgColor="#DD4D44"
-        />
-        <CustomButton
-          text="Sign in with Apple"
-          onPress={onSignInApple}
-          bgColor="#E3E3E3"
-          fgColor="#363636"
-        />
+        <SocialSignInButtons />
+
         <CustomButton
           text="Don't have an account? Create one"
           onPress={onSignUpPressed}
