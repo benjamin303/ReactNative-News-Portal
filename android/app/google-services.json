@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1023369927458",
+    "project_id": "reactnativenewsportal-48d2b",
+    "storage_bucket": "reactnativenewsportal-48d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023369927458:android:ee93f7724693c1a988a37b",
+        "android_client_info": {
+          "package_name": "com.rnproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023369927458-8knhg9fgi9aneqbtclo7dhpk6gere8hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYCQJg__lbU9LCkjHxfhtaQMkyra_bnbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023369927458-8knhg9fgi9aneqbtclo7dhpk6gere8hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
