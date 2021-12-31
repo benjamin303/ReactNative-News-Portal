@@ -9,9 +9,9 @@ const SocialSignInButtons = () => {
   const onSignInGoogle = () => {
     console.warn('google');
   };
-  const onSignInApple = () => {
-    console.warn('apple');
-  };
+  // const onSignInApple = () => {
+  //   console.warn('apple');
+  // };
 
   return (
     <>
@@ -27,12 +27,12 @@ const SocialSignInButtons = () => {
         bgColor="#FAE9EA"
         fgColor="#DD4D44"
       />
-      <CustomButton
+      {/* <CustomButton
         text="Sign in with Apple"
         onPress={onSignInApple}
         bgColor="#E3E3E3"
         fgColor="#363636"
-      />
+      /> */}
     </>
   );
 };

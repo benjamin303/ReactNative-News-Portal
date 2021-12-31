@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   text_SECONDARY: {
     color: '#3B71F3',
   },
+  
   text_TERTIARY: {
     color: 'gray',
   },
